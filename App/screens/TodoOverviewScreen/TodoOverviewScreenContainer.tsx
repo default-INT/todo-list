@@ -3,7 +3,7 @@ import React from "react";
 import TodoOverviewScreenView from "./TodoOverviewScreenView";
 import { TodoOverviewProps } from "../../navigation/types";
 
-const TodoOverviewScreenContainer = ({navigation, route} : TodoOverviewProps) => {
+const TodoOverviewScreenContainer  : React.FC<TodoOverviewProps> = ({navigation, route}) => {
   return (
     <TodoOverviewScreenView />
   )

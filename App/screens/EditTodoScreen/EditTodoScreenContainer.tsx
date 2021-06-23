@@ -4,7 +4,8 @@ import { EditTodoProps } from "../../navigation/types";
 import EditTodoScreenView from "./EditTodoScreenView";
 
 
-const EditTodoScreenContainer = ({navigation, route} : EditTodoProps) => {
+const EditTodoScreenContainer : React.FC<EditTodoProps> = ({navigation, route}) => {
+  // route.params.todoId TODO: remember!
   return (
     <EditTodoScreenView
     />
