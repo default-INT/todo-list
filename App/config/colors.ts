@@ -1,3 +1,4 @@
 export default {
-  white: '#fff'
+  white: '#fff',
+  whitesmoke: 'whitesmoke'
 }

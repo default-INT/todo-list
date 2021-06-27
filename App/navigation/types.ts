@@ -3,6 +3,7 @@ import { TodoOverviewScreen } from "../screens/TodoOverviewScreen";
 
 export type TodoStackParamList = {
   TodoOverview: undefined;
+  ArticlesOverview: undefined;
   EditTodoScreen: {todoId: string};
 };
 

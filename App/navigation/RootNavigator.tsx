@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator, StackNavigationOptions } from "@react-navigation/stack";
 
 import { TodoStackParamList } from "./types";
-import { EditTodoScreen, TodoOverviewScreen } from "../screens";
+import { ArticleOverviewScreen, EditTodoScreen, TodoOverviewScreen } from "../screens";
 import { Colors } from "../config";
 
 
@@ -30,6 +30,10 @@ const TodoNavigator = () => {
       <TodoStackNavigator.Screen
         name='EditTodoScreen'
         component={EditTodoScreen}
+      />
+      <TodoStackNavigator.Screen
+        name='ArticlesOverview'
+        component={ArticleOverviewScreen}
       />
     </TodoStackNavigator.Navigator>
   )
