@@ -5,7 +5,8 @@ import { ArticleProvider } from "./ArticleProvider";
 
 
 export const ArticleProviderQuery : React.FC<ReactNode> = ({children}) => {
-  const queryClient = new QueryClient()
+  const queryClient = new QueryClient();
+
   return (
     <QueryClientProvider client={queryClient}>
       <ArticleProvider>

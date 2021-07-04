@@ -4,7 +4,9 @@ import { TodoContextType } from "../../providers/TodoProvider/types";
 import TodoContext from "../../providers/TodoProvider/TodoContext";
 import { Colors } from "../../config";
 
-const TodoOverviewScreenView = (props : any) => {
+export type TodoOverviewViewProps = any
+
+const TodoOverviewScreenView : React.FC<TodoOverviewViewProps> = (props ) => {
   const {todos} = useContext(TodoContext) as TodoContextType ;
 
   return (
